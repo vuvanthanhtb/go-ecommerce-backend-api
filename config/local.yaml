@@ -2,7 +2,7 @@ server:
   port: 8082
   mode: "dev"
 mysql:
-  host: 127.0.0.1
+  host: mysql_container # 127.0.0.1
   port: 3306
   username: root
   password: Thanh2024
@@ -18,18 +18,7 @@ logger:
   maxAge: 30
   compress: true
 redis:
-  host: 127.0.0.1
-  port: 6381
+  host: redis_container # 127.0.0.1
+  port: 6379 # 6381
   password:
   database: 0
-  # poolSize: 100
-  # minIdleConns: 200
-  # maxIdleConns: 400
-  # connTimeout: 10
-  # readTimeout: 10
-  # writeTimeout: 10
-  # dialTimeout: 10
-  # poolTimeout: 10
-  # idleTimeout: 10
-  # maxConnAge: 10
-  # connMaxLifetime: 10
