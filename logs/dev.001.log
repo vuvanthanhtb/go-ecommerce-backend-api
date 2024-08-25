@@ -7,3 +7,9 @@
 {"level":"INFO","time":"2024-08-24T20:19:45.499+0700","caller":"initialize/run.go:15","msg":"Logger initialized","OK":"SUCCESS"}
 {"level":"INFO","time":"2024-08-24T20:19:45.503+0700","caller":"initialize/mysql.go:20","msg":"Initializing msql successfully"}
 {"level":"INFO","time":"2024-08-24T20:19:45.598+0700","caller":"initialize/redis.go:45","msg":"Successfully connected to Redis: ","score":"100"}
+{"level":"INFO","time":"2024-08-25T21:48:32.931+0700","caller":"initialize/run.go:15","msg":"Logger initialized","OK":"SUCCESS"}
+{"level":"INFO","time":"2024-08-25T21:48:32.935+0700","caller":"initialize/mysql.go:21","msg":"Initializing msql successfully"}
+{"level":"INFO","time":"2024-08-25T21:48:32.997+0700","caller":"initialize/redis.go:45","msg":"Successfully connected to Redis: ","score":"100"}
+{"level":"INFO","time":"2024-08-25T21:52:38.821+0700","caller":"initialize/run.go:15","msg":"Logger initialized","OK":"SUCCESS"}
+{"level":"INFO","time":"2024-08-25T21:52:38.825+0700","caller":"initialize/mysql.go:21","msg":"Initializing msql successfully"}
+{"level":"INFO","time":"2024-08-25T21:52:38.902+0700","caller":"initialize/redis.go:45","msg":"Successfully connected to Redis: ","score":"100"}
