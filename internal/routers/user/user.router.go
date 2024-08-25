@@ -2,9 +2,7 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/vuvanthanhtb/go-ecommerce-backend-api/internal/controller"
-	"github.com/vuvanthanhtb/go-ecommerce-backend-api/internal/repo"
-	"github.com/vuvanthanhtb/go-ecommerce-backend-api/internal/service"
+	"github.com/vuvanthanhtb/go-ecommerce-backend-api/internal/wire"
 )
 
 type UserRouter struct {
@@ -13,12 +11,15 @@ type UserRouter struct {
 func (ur *UserRouter) InitUserRouter(rg *gin.RouterGroup) {
 	// Public router
 	// this is non-dependency
-	ure := repo.NewUserRepository()
-	us := service.NewUserService(ure)
-	userHandlerNonDependency := controller.NewUserController(us)
+	// ure := repo.NewUserRepository()
+	// us := service.NewUserService(ure)
+	// userHandlerNonDependency := controller.NewUserController(us)
+
+	// DI use wire go
+	userController, _ := wire.InitUserRouterHandler()
 	userRouterPublic := rg.Group("/user")
 	{
-		userRouterPublic.GET("/register", userHandlerNonDependency.Register)
+		userRouterPublic.GET("/register", userController.Register)
 		userRouterPublic.GET("/otp")
 	}
 
