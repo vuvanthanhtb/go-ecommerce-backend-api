@@ -1,0 +1,9 @@
+@baseUrl=http://localhost:8082/api/v1
+
+### User registration
+POST {{baseUrl}}/user/register
+Content-Type: application/json
+{
+  "email": "vuthanhtb.dev@gmail.com",
+  "purpose": "TEST_USER"
+}

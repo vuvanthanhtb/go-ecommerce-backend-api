@@ -1,5 +1,5 @@
-version: '3.9'
-services:
+# version: '3.9'
+# services:
   # zookeeper:
   #   image: quay.io/debezium/zookeeper:${DEBEZIUM_VERSION}
   #   container_name: zookeeper_container
@@ -17,16 +17,16 @@ services:
   #   environment:
   #     - ZOOKEEPER_CONNECT=zookeeper:2181
 
-  kafka-ui:
-    image: provectuslabs/kafka-ui:latest
-    container_name: kafka_ui_container
-    ports:
-      - 9089:8080
-    links:
-      - kafka
-    environment:
-      - KAFKA_CLUSTERS_0_NAME=local
-      - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092
+  # kafka-ui:
+  #   image: provectuslabs/kafka-ui:latest
+  #   container_name: kafka_ui_container
+  #   ports:
+  #     - 9089:8080
+  #   links:
+  #     - kafka
+  #   environment:
+  #     - KAFKA_CLUSTERS_0_NAME=local
+  #     - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092
   # mysql:
   #   image: quay.io/debezium/example-mysql:${DEBEZIUM_VERSION}
   #   container_name: mysql_container
@@ -36,5 +36,3 @@ services:
   #     MYSQL_PASSWORD: Thanh2024
   #   ports:
   #     - "3306:3306"
-
-  # INSERT INTO table_name ('order_number', 'order_date', 'purchaser', 'quantity', 'product_id') VALUES (10005, 2024-08-29, 1005, 10, 2024);

@@ -1,4 +1,4 @@
-version: '3'
+# version: '3'
 
 # docker run -it --rm --name zookeeper -p 2181:2181 -p 2888:2888 -p 3888:3888 quay.io/debezium/zookeeper:2.7
 # docker run -it --rm --name kafka -p 9092:9092 --link zookeeper:zookeeper quay.io/debezium/kafka:2.7
@@ -8,11 +8,11 @@ version: '3'
 # UI Kafka
 # docker run -it --rm --name kafka-ui -p 9090:8080 --link kafka:kafka -e KAFKA_CLUSTERS_0_NAME=local -e KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092 
 
-services:
-  zookeeper:
-    image: quay.io/debezium/zookeeper:2.7
-    container_name: member_zookeeper_container
-    ports:
-      - 2181:2181
-      - 2888:2888
-      - 3888:3888
+# services:
+#   zookeeper:
+#     image: quay.io/debezium/zookeeper:2.7
+#     container_name: member_zookeeper_container
+#     ports:
+#       - 2181:2181
+#       - 2888:2888
+#       - 3888:3888

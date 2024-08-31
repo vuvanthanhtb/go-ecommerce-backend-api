@@ -9,7 +9,7 @@ import (
 func InitRouter() *gin.Engine {
 	var r *gin.Engine
 
-	if global.Config.Sever.Mode == "dev" {
+	if global.Config.Server.Mode == "dev" {
 		gin.SetMode(gin.DebugMode)
 		gin.ForceConsoleColor()
 		r = gin.Default()
